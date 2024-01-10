@@ -13,11 +13,19 @@ export default {
 }
 </script>
 <template lang="">
-  <div>
     <main>
        
     </main>
-  </div>
 </template>
 
-<style lang="scss" scoped></style>
+
+<style lang="scss" scoped>
+@use '../styles/generals.scss';
+
+main {
+    background-color: rgba(212, 143, 56, 255);
+    height: 100vh;
+
+
+}
+</style>
