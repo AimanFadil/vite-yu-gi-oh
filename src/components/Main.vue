@@ -14,7 +14,7 @@ export default {
 </script>
 <template lang="">
     <main>
-       
+        <contCards/>
     </main>
 </template>
 
