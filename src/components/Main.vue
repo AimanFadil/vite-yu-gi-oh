@@ -1,5 +1,6 @@
 <script>
 import contCards from '../components/contCards.vue'
+import { store } from '../store.js';
 export default {
     components: {
         contCards,
@@ -7,23 +8,29 @@ export default {
     name: 'Main',
     data() {
         return {
-
+            store,
+            allArchetype: [
+                'Archfiend',
+                'Magistus',
+                'Noble Knight',
+                'Paleozoic'
+            ]
         }
     }
+
 }
 </script>
 <template lang="">
     <main>
         <div class="diff">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Alien</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+            <select class="form-select" aria-label="Default select example" v-model="this.store.archetype">
+                <option id="filter" >Select Archetype</option>
+                <option v-for="archetype, index in allArchetype" :key="index" :value="archetype">{{ archetype }}</option>
             </select>
         </div>
         <contCards/>
     </main>
+
 </template>
 
 
