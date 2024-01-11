@@ -24,6 +24,7 @@ header {
     height: 100px;
     padding: 10px;
     display: flex;
+    background-color: white;
 
     img {
         width: 10%;

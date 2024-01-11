@@ -48,6 +48,7 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     margin: 10px;
+    background-color: white;
 
 
 

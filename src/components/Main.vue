@@ -31,11 +31,11 @@ export default {
 @use '../styles/generals.scss';
 
 main {
-    background-color: rgba(212, 143, 56, 255);
+
     height: 100%;
 
     .diff {
-        background-color: rgba(212, 143, 56, 255);
+
         width: 200px;
         padding: 20px;
         height: 150px;
