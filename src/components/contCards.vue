@@ -2,10 +2,12 @@
 import { store } from '../store.js';
 import axios from 'axios';
 import cards from '../components/cards.vue';
+
 export default {
     name: 'contCards',
     components: {
-        cards
+        cards,
+
     },
     data() {
         return {
@@ -70,6 +72,7 @@ export default {
     display: flex;
     justify-content: space-evenly;
     color: white;
+    background-color: black;
 }
 
 .content {
